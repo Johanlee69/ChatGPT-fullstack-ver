@@ -1,0 +1,24 @@
+.side_bar{
+    position: relative;
+    width: 420px;
+    transition: width 0.2s ease-in;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.content_{
+    position: absolute;
+    width: 100%
+}
+
+
+div{
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+    .side_bar {
+       width: 0px; 
+       transition: width 0.2s ease-in;
+        z-index: 20; 
+    }
+  }
