@@ -22,8 +22,8 @@ export const FunLogOuT = async (req,res)=>{
         
         res.clearCookie("Token", {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: process.env.NODE_ENV === "production" ? "Strict" : "Lax",
+            secure: true,
+            sameSite: "Strict" ,
             path: "/"
         });
         
