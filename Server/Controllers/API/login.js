@@ -22,8 +22,8 @@ export const FunLogin = async (req,res)=>{
          await newTOken.save()
          res.cookie('Token', token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: process.env.NODE_ENV === "production" ? "Strict" : "Lax",
+            secure: true,
+            sameSite: "Strict",
             maxAge: 3600000,
             path: "/"
          })
